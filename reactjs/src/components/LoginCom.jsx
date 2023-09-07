@@ -75,10 +75,25 @@ function LoginCom() {
     // </section>
 
     <section>
-      <div className="container">
+      <div className="container" style={{ border: '1px solid rgba(0, 0, 0, 0.8)'}}>
         <div className="login-content">
-          a
+          <div className="login-text text-center sans-serif" style={{ color: '#5c5c5c'}}>
+            <p style={{ fontSize: 22}}>Sign In</p>
+            <p style={{ fontSize: 14}}>Please enter your username and password</p>
+          </div>
+
+          <form action="" id="login" method="post" onSubmit={handleSubmit}>
+            <div className="form-outline mb-4">
+              <input type="username" id="username" className="form-control sans-serif rounded-0" placeholder="Username" value={username} onChange={e => setUsername(e.target.value)} required />
+            </div>
+
+            <div className="form-outline mb-4">
+              <input type="password" id="password" className="form-control sans-serif rounded-0" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} required />
+            </div>
+            <button className="login-button btn btn-primary rounded-0" type="submit"><b>Login</b></button>
+          </form>
         </div>
+        
       </div>
     </section>
   )
