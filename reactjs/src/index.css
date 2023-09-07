@@ -19,7 +19,7 @@ code {
 }
 
 .navbar-text{
-  font-size: 17px;
+  font-size: 15px;
   color: #ffffff;
   font-weight: bold;
 }
@@ -35,4 +35,10 @@ code {
 .login-button{
   height: 45px;
   width: 100%;
+}
+
+.icon{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
 }
