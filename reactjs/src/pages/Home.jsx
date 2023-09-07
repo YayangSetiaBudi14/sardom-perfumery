@@ -1,9 +1,9 @@
 import React from 'react';
-import HomeCom from '../components/HomeCom';
+import Navbar from '../components/Navbar';
 
 
 const Home = () => {
-  return <HomeCom />;
+  return <Navbar />;
 }
 
 export default Home;
