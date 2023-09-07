@@ -64,3 +64,9 @@ code {
   width: 400px;
 }
 
+.navbar-text{
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
