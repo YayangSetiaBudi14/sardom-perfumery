@@ -59,3 +59,8 @@ code {
   padding: 5px;
 }
 
+.login-content{
+  border-style: solid;
+  width: 400px;
+}
+
