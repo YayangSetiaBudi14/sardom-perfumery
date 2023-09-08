@@ -44,6 +44,12 @@ code {
 }
 
 .card-product{
+  height: 100%;
+  width: 300px;
+}
+
+.card-product{
+  height: 100%;
   width: 300px;
 }
 
