@@ -14,7 +14,7 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarScroll">
                     <ul className="navbar-nav me-auto ms-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li className="nav-item ms-0 me-2 me-lg-4">
-                            <Link to="/inihome" className="nav-link active text-light" aria-current="page">Home</Link>
+                            <Link to="/home" className="nav-link active text-light" aria-current="page">Home</Link>
                         </li>
                         <li className="nav-item ms-0 mx-2 mx-lg-4">
                             <Link to="/perfumes" className="nav-link text-light">Perfurmes</Link>
@@ -31,7 +31,7 @@ function Navbar() {
                         </li>
                         <li className="nav-item ms-0 mx-2 mx-lg-5">
                             <div className="d-flex p-1 align-items-center">
-                                <Link to="/myAccount" className="text-light m-0 text-decoration-none"><i className="fa fa-user"></i> My Account</Link>
+                                <Link to="/profile" className="text-light m-0 text-decoration-none"><i className="fa fa-user"></i> My Account</Link>
                             </div>
                         </li>
                     </ul>
