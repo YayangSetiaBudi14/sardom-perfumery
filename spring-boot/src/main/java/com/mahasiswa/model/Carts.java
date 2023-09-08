@@ -2,12 +2,13 @@ package com.mahasiswa.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Column;
-// import javax.persistence.Id;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "carts")
 public class Carts{
+	@Id
     @Column
     private String id_cart;
 
