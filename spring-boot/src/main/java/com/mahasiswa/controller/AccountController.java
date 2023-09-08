@@ -7,18 +7,17 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.mahasiswa.model.Akun;
-import com.mahasiswa.service.AkunService;
+import com.mahasiswa.model.Account;
+import com.mahasiswa.service.AccountService;
 
 @RestController
 @CrossOrigin
-public class AkunController {
+public class AccountController{
     @Autowired
-    AkunService akunService;
+    AccountService accountService;
 
     @PostMapping("/login")
-    public Akun login(@RequestParam String username, @RequestParam String password) {
-        return akunService.login(username, password);
+    public Account login(@RequestParam String username, @RequestParam String password) {
+        return accountService.login(username, password);
     }
-
 }
