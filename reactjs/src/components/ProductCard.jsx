@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function ProductCard(){
     const [products, setProducts] = useState([])
@@ -41,7 +42,7 @@ function ProductCard(){
                                     </div>
                                 </div>
                                 <div className="card-body text-center">
-                                    <h5 className="card-title">{product.name}</h5>
+                                    <Link to={`/product/${product.id_product}`} className="card-title text-decoration-none fs-5 fw-bold">{product.name}</Link>
                                     <p className="card-text">Rp. {product.price}</p>
                                 </div>
                             </div>
