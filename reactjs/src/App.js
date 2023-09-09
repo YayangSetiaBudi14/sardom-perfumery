@@ -6,6 +6,7 @@ import Register from './pages/Register';
 import Home from './pages/Home';
 import TabelMahasiswa from './pages/ListMahasiswa';
 import Mahasiswa from './pages/Mahasiswa';
+import ProductPage from './pages/Product';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/mahasiswa">
             <Mahasiswa />
           </Route>
+          <Route path="/product/:productId" component={ProductPage} />
         </Switch>
     </Router>
   );
