@@ -25,7 +25,7 @@ function ProductCard(){
                     <div className="col-4 mt-4">
                         <div className="card-product card">
                             <div className="card-product-container">
-                                <img className="card-img-top" src="./assets/product001.png" alt="Davidoff"/>
+                                <img className="card-img-top" src="/assets/product001.png" alt="Davidoff"/>
                                 <div className="card-body">
                                     <div className="row">
                                         <div className="card-rating col">
