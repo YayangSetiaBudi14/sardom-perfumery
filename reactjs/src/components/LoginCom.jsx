@@ -25,10 +25,10 @@ function LoginCom() {
         const Role = checkRole(response.data.role);
       
         //Redirect sesuai Role
-        if(Role === '/mahasiswa'){
-        return history.push(`/mahasiswa/${response.data.username}`);
-        }else if(Role === '/dosen'){
-          return history.push(`/dosen/${response.data.username}`);
+        if(Role === '/customer'){
+        return history.push(`/home/${response.data.username}`);
+        }else if(Role === '/admin'){
+          return history.push(`/admin/${response.data.username}`);
         }else{
           return history.push(`/home`);
         }
@@ -69,10 +69,10 @@ function LoginCom() {
 }
 
 function checkRole(role){
-  if(role === 'mahasiswa'){
-    return '/mahasiswa';
-  }else if( role === 'dosen'){
-    return '/dosen';
+  if(role === 'Customer'){
+    return '/customer';
+  }else if( role === 'Admin'){
+    return '/admin';
   }else{
     return '/home';
   }
